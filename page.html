@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Welcome!</title>
+    <link rel="stylesheet" href="design.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script>
+
+
+    function search() {
+
+    let filter = document.getElementById('find').value.toUpperCase();
+
+    let item = document.querySelectorAll('label');
+
+    let l = document.getElementsByClassName('keyword');
+
+    for(var i = 0;i<=l.length;i++){
+        let a=item[i].getElementsByClassName('keyword')[0];
+        
+        let value=a.innerHTML || a.innerText || a.textContent;
+
+        if(value.toUpperCase().indexOf(filter) > -1) {
+            item[i].style.display="";
+        }
+        else{
+            item[i].style.display="none";
+        }
+    }
+}
+    </script>
+
+</head>
+<body>
+
+
+    <div class="wrap">
+        <div class="searchbox">
+            <a href="" class="name">OneraVem</a>
+            <box-icon name='search-alt-2' type='solid' animation='tada-hover'></box-icon>
+            <input id="find" type="text" placeholder="Search movie" onkeyup="search()">
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="page.html">Home</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Address</a></li>
+                <li><a href="">About</a></li>
+                <li><a class="login" href="login.html">LOGIN</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="greeting">
+      <h1>Welcome to not your website </h1>
+      <p>ini adalah website informasi sederhana mengenai mall yang ada di Batam!</p>
+      <p>Pleaseee males banget jadi begini aja jadinya </p>
+      <h1>ಥ_ಥ</h1><br>
+      <a class="me" href=""><h2 class="keyword">who is me?</h2></a>
+      <a href="#checkpoint"><img src="files/bot.svg"></a>
+    </div>
+    <hr id="checkpoint">
+
+    <div id="mall">
+
+    <label>
+			<input class="card" type="checkbox" />
+			<div class="flip-card">
+				<div class="front">
+					<img src="files/harbour.jpeg" alt="" />
+					<h1>MALL</h1>
+					<h2 class="keyword">Harbour Bay Batam Mall</h2>
+					<b>Batu Ampar</b>
+					<p>Informasi Selengkapnya</p>
+				</div>
+				<div class="back">
+					<h1>About Mall</h1>
+					<hr class="space">
+					<p>5X3X+X32, Jl. Harbour Bay, Sungai Jodoh, Kec. Batu Ampar, Kota Batam, Kepulauan Riau</p>
+					<hr class="space">
+          <div class="sosmed">
+            <a href=""><img src="files/instagram.png"></a> 
+            <a href=""><img src="files/youtube.png"></a> 
+            <a href=""><img src="files/twitter.png"></a> 
+            <a href=""><img src="files/facebook.png"></a> 
+          </div>
+				</div>
+			</div>
+    </label>
+
+    <label>
+			<input class="card" type="checkbox" />
+			<div class="flip-card">
+				<div class="front">
+					<img src="files/dc.jpeg" alt="" />
+					<h1>MALL</h1>
+					<h2 class="keyword">Diamond City (DC) Mall</h2>
+					<b>Lubuk Baja</b>
+					<p>Informasi Selengkapnya</p>
+				</div>
+				<div class="back">
+					<h1>About Mall</h1>
+					<hr class="space">
+					<p>42R3+F3W, Unnamed Road, Tj. Uma, Kec. Lubuk Baja, Kota Batam, Kepulauan Riau</p>
+					<hr class="space">
+          <div class="sosmed">
+            <a href=""><img src="files/instagram.png"></a> 
+            <a href=""><img src="files/youtube.png"></a> 
+            <a href=""><img src="files/twitter.png"></a> 
+            <a href=""><img src="files/facebook.png"></a> 
+          </div>
+				</div>
+			</div>
+    </label>
+
+    <label>
+			<input class="card" type="checkbox" />
+			<div class="flip-card">
+				<div class="front">
+					<img src="files/bcs.jpeg" alt="" />
+					<h1>MALL</h1>
+					<h2 class="keyword">Batam City Square (BCS)</h2>
+					<b>Lubuk Baja</b>
+					<p>Informasi Selengkapnya</p>
+				</div>
+				<div class="back">
+					<h1>About Mall</h1>
+					<hr class="space">
+					<p>Jl. Bunga Raya, Batu Selicin, Kec. Lubuk Baja, Kota Batam, Kepulauan Riau </p>
+					<hr class="space">
+          <div class="sosmed">
+            <a href=""><img src="files/instagram.png"></a> 
+            <a href=""><img src="files/youtube.png"></a> 
+            <a href=""><img src="files/twitter.png"></a> 
+            <a href=""><img src="files/facebook.png"></a> 
+          </div>
+				</div>
+			</div>
+    </label>
+
+    <label>
+			<input class="card" type="checkbox" />
+			<div class="flip-card">
+				<div class="front">
+					<img src="files/mm.jpeg" alt="" />
+					<h1>MALL</h1>
+					<h2 class="keyword">Mega Mall Batam</h2>
+					<b>Batam Kota</b>
+					<p>Informasi Selengkapnya</p>
+				</div>
+				<div class="back">
+					<h1>About Mall</h1>
+					<hr class="space">
+					<p>Jl. Engku Putri No.1, Belian, Kec. Batam Kota, Kota Batam, Kepulauan Riau</p>
+					<hr class="space">
+          <div class="sosmed">
+            <a href=""><img src="files/instagram.png"></a> 
+            <a href=""><img src="files/youtube.png"></a> 
+            <a href=""><img src="files/twitter.png"></a> 
+            <a href=""><img src="files/facebook.png"></a> 
+          </div>
+				</div>
+			</div>
+    </label>
+
+    <label>
+			<input class="card" type="checkbox" />
+			<div class="flip-card">
+				<div class="front">
+					<img src="files/nagoya.jpeg" alt="" />
+					<h1>MALL</h1>
+					<h2 class="keyword">Nagoya Hill Shopping Mall</h2>
+					<b>Nagoya</b>
+					<p>Informasi Selengkapnya</p>
+				</div>
+				<div class="back">
+					<h1>About Mall</h1>
+					<hr class="space">
+					<p>Jl. Nagoya Hl, Lubuk Baja Kota, Lubuk Baja, Batam City, Riau Islands 29444</p>
+					<hr class="space">
+          <div class="sosmed">
+            <a href=""><img src="files/instagram.png"></a> 
+            <a href=""><img src="files/youtube.png"></a> 
+            <a href=""><img src="files/twitter.png"></a> 
+            <a href=""><img src="files/facebook.png"></a> 
+          </div>
+				</div>
+			</div>
+    </label>
+
+    <label>
+			<input class="card" type="checkbox" />
+			<div class="flip-card">
+				<div class="front">
+					<img src="files/kepri.jpeg" alt="" />
+					<h1>MALL</h1>
+					<h2 class="keyword">Kepri Mall</h2>
+					<b>Batam Kota</b>
+					<p>Informasi Selengkapnya</p>
+				</div>
+				<div class="back">
+					<h1>About Mall</h1>
+					<hr class="space">
+					<p>422P+CJ2, Simpang Kabil, Sukajadi, Batam Kota, Batam</p>
+					<hr class="space">
+          <div class="sosmed">
+            <a href=""><img src="files/instagram.png"></a> 
+            <a href=""><img src="files/youtube.png"></a> 
+            <a href=""><img src="files/twitter.png"></a> 
+            <a href=""><img src="files/facebook.png"></a> 
+          </div>
+				</div>
+			</div>
+    </label>
+
+    <label>
+			<input class="card" type="checkbox" />
+			<div class="flip-card">
+				<div class="front">
+					<img src="files/panbil.jpeg" alt="" />
+					<h1>MALL</h1>
+					<h2 class="keyword">Panbill Mall</h2>
+					<b>Muka Kuning</b>
+					<p>Informasi Selengkapnya</p>
+				</div>
+				<div class="back">
+					<h1>About Mall</h1>
+					<hr class="space">
+					<p>Unnamed Road, Muka Kuning, Kec. Sei Beduk, Kota Batam, Kepulauan Riau</p>
+					<hr class="space">
+          <div class="sosmed">
+            <a href=""><img src="files/instagram.png"></a> 
+            <a href=""><img src="files/youtube.png"></a> 
+            <a href=""><img src="files/twitter.png"></a> 
+            <a href=""><img src="files/facebook.png"></a> 
+          </div>
+				</div>
+			</div>
+    </label>
+
+    <label>
+			<input class="card" type="checkbox" />
+			<div class="flip-card">
+				<div class="front">
+					<img src="files/batamindo.jpeg" alt="" />
+					<h1>MALL</h1>
+					<h2 class="keyword">Plaza BatamIndo</h2>
+					<b>Nongsa</b>
+					<p>Informasi Selengkapnya</p>
+				</div>
+				<div class="back">
+					<h1>About Mall</h1>
+					<hr class="space">
+					<p>329F+2JJ, Jl. Rasamala-Batamindo Indurty Park, Kabil, Kecamatan Nongsa, Kota Batam, Kepulauan Riau</p>
+					<hr class="space">
+          <div class="sosmed">
+            <a href=""><img src="files/instagram.png"></a> 
+            <a href=""><img src="files/youtube.png"></a> 
+            <a href=""><img src="files/twitter.png"></a> 
+            <a href=""><img src="files/facebook.png"></a> 
+          </div>
+				</div>
+			</div>
+    </label>
+
+    <label>
+			<input class="card" type="checkbox" />
+			<div class="flip-card">
+				<div class="front">
+					<img src="files/avava.jpeg" alt="" />
+					<h1>MALL</h1>
+					<h2 class="keyword">Avava Mall</h2>
+					<b>Lubuk Baja</b>
+					<p>Informasi Selengkapnya</p>
+				</div>
+				<div class="back">
+					<h1>About Mall</h1>
+					<hr class="space">
+					<p>Jalan Kompleks Business Centre Blok III Lt. 2 – Jodoh, Lubuk Baja Kota, Kec. Lubuk Baja, Kota Batam, Kepulauan Riau</p>
+					<hr class="space">
+          <div class="sosmed">
+            <a href=""><img src="files/instagram.png"></a> 
+            <a href=""><img src="files/youtube.png"></a> 
+            <a href=""><img src="files/twitter.png"></a> 
+            <a href=""><img src="files/facebook.png"></a> 
+          </div>
+				</div>
+			</div>
+    </label>
+
+    <label>
+			<input class="card" type="checkbox" />
+			<div class="flip-card">
+				<div class="front">
+					<img src="files/top100jdh.jpeg" alt="" />
+					<h1>MALL</h1>
+					<h2 class="keyword">Top 100 Jodoh</h2>
+					<b>Lubuk Baja</b>
+					<p>Informasi Selengkapnya</p>
+				</div>
+				<div class="back">
+					<h1>About Mall</h1>
+					<hr class="space">
+					<p>Top 100 Jodoh 1st Floor, Jl. Raya Ali H. Komp. Batam Sentosa, Lubuk Baja Kota, Kec. Lubuk Baja, Kota Batam, Kepulauan Riau</p>
+					<hr class="space">
+          <div class="sosmed">
+            <a href=""><img src="files/instagram.png"></a> 
+            <a href=""><img src="files/youtube.png"></a> 
+            <a href=""><img src="files/twitter.png"></a> 
+            <a href=""><img src="files/facebook.png"></a> 
+          </div>
+				</div>
+			</div>
+    </label>
+
+    <label>
+			<input class="card" type="checkbox" />
+			<div class="flip-card">
+				<div class="front">
+					<img src="files/luckplaza.jpeg" alt="" />
+					<h1>MALL</h1>
+					<h2 class="keyword">Lucky Plaza Batam</h2>
+					<b>Lubuk Baja</b>
+					<p>Informasi Selengkapnya</p>
+				</div>
+				<div class="back">
+					<h1>About Mall</h1>
+					<hr class="space">
+					<p>Lucky plaza, Jl. Raden Fatah, Lubuk Baja Kota, Kec. Lubuk Baja, Kota Batam, Kepulauan Riau</p>
+					<hr class="space">
+          <div class="sosmed">
+            <a href=""><img src="files/instagram.png"></a> 
+            <a href=""><img src="files/youtube.png"></a> 
+            <a href=""><img src="files/twitter.png"></a> 
+            <a href=""><img src="files/facebook.png"></a> 
+          </div>
+				</div>
+			</div>
+    </label>
+
+    <label>
+			<input class="card" type="checkbox" />
+			<div class="flip-card">
+				<div class="front">
+					<img src="files/onebatam.jpg" alt="" />
+					<h1>MALL</h1>
+					<h2 class="keyword">One Batam Mall</h2>
+					<b>Batam Kota</b>
+					<p>Informasi Selengkapnya</p>
+				</div>
+				<div class="back">
+					<h1>About Mall</h1>
+					<hr class="space">
+					<p>Mega Mall Batam Centre, Tlk. Tering, Kec. Batam Kota, Kota Batam, Kepulauan Riau</p>
+					<hr class="space">
+          <div class="sosmed">
+            <a href=""><img src="files/instagram.png"></a> 
+            <a href=""><img src="files/youtube.png"></a> 
+            <a href=""><img src="files/twitter.png"></a> 
+            <a href=""><img src="files/facebook.png"></a> 
+          </div>
+				</div>
+			</div>
+    </label>
+
+    <label>
+			<input class="card" type="checkbox" />
+			<div class="flip-card">
+				<div class="front">
+					<img src="files/top100btaj.jpeg" alt="" />
+					<h1>MALL</h1>
+					<h2 class="keyword">Mall Top 100 Batu Aji</h2>
+					<b>Sagulung</b>
+					<p>Informasi Selengkapnya</p>
+				</div>
+				<div class="back">
+					<h1>About Mall</h1>
+					<hr class="space">
+					<p>Tembesi, Kec. Sagulung, Kota Batam, Kepulauan Riau 29424</p>
+					<hr class="space">
+          <div class="sosmed">
+            <a href=""><img src="files/instagram.png"></a> 
+            <a href=""><img src="files/youtube.png"></a> 
+            <a href=""><img src="files/twitter.png"></a> 
+            <a href=""><img src="files/facebook.png"></a> 
+          </div>
+				</div>
+			</div>
+    </label>
+
+    <label>
+			<input class="card" type="checkbox" />
+			<div class="flip-card">
+				<div class="front">
+					<img src="files/mb2.jpeg" alt="" />
+					<h1>MALL</h1>
+					<h2 class="keyword">Mall Botania 2</h2>
+					<b>Batam Kota</b>
+					<p>Informasi Selengkapnya</p>
+				</div>
+				<div class="back">
+					<h1>About Mall</h1>
+					<hr class="space">
+					<p>Jl. Raja Alikelana, Belian, Kec. Batam Kota, Kota Batam, Kepulauan Riau</p>
+					<hr class="space">
+          <div class="sosmed">
+            <a href=""><img src="files/instagram.png"></a> 
+            <a href=""><img src="files/youtube.png"></a> 
+            <a href=""><img src="files/twitter.png"></a> 
+            <a href=""><img src="files/facebook.png"></a> 
+          </div>
+				</div>
+			</div>
+    </label>
+
+    <label>
+			<input class="card" type="checkbox" />
+			<div class="flip-card">
+				<div class="front">
+					<img src="files/grandmall.jpeg" alt="" />
+					<h1>MALL</h1>
+					<h2 class="keyword">Grand Batam Mall</h2>
+					<b>Lubuk Baja</b>
+					<p>Informasi Selengkapnya</p>
+				</div>
+				<div class="back">
+					<h1>About Mall</h1>
+					<hr class="space">
+					<p>Jl. Pembangunan, Batu Selicin, Kec. Lubuk Baja, Kota Batam, Kepulauan Riau 29444</p>
+					<hr class="space">
+          <div class="sosmed">
+            <a href=""><img src="files/instagram.png"></a> 
+            <a href=""><img src="files/youtube.png"></a> 
+            <a href=""><img src="files/twitter.png"></a> 
+            <a href=""><img src="files/facebook.png"></a> 
+          </div>
+				</div>
+			</div>
+    </label>
+
+    <label>
+			<input class="card" type="checkbox" />
+			<div class="flip-card">
+				<div class="front">
+					<img src="files/stc.jpeg" alt="" />
+					<h1>MALL</h1>
+					<h2 class="keyword">Star Trade Center (STC) Mall</h2>
+					<b>Sekupang</b>
+					<p>Informasi Selengkapnya</p>
+				</div>
+				<div class="back">
+					<h1>About Mall</h1>
+					<hr class="space">
+					<p>4X43+RW3, Jl. Mesjid Baiturrahman, Sungai Harapan, Kec. Sekupang, Kota Batam, Kepulauan Riau 29425</p>
+					<hr class="space">
+          <div class="sosmed">
+            <a href=""><img src="files/instagram.png"></a> 
+            <a href=""><img src="files/youtube.png"></a> 
+            <a href=""><img src="files/twitter.png"></a> 
+            <a href=""><img src="files/facebook.png"></a> 
+          </div>
+				</div>
+			</div>
+    </label>
+
+
+
+    
+
+
+
+ </div>    
+      
+		
+<footer>
+  <div class="bottom">
+    <h5>This Website Made by Me not You</h5>
+    <i><p class="quotes">"Dia sedang bercanda, harusnya kamu tertawa bukan menyukainya"</p></i>
+  </div>
+</footer>
+
+</body>
+</html>

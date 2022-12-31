@@ -1,0 +1,350 @@
+*, html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(146, 156, 165);
+}
+
+.wrap{
+    z-index: 9999;
+    background-color: rgb(174, 186, 197); 
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar{
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    position: relative;
+    display: flex;
+    
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+.navbar ul li{
+    list-style: none;
+    padding: 10px;
+}
+
+.navbar ul li a{
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+    font-family: molot;
+    font-size: 1.5em;
+    letter-spacing: 1.5px;
+}
+
+div.navbar ul li a.login{
+    margin-left: 180px;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 6px;
+    display: flex;
+}
+
+div.navbar ul li a.login:hover{
+    background-color: rgb(146, 156, 165);
+    transform: scale(1.05);
+}
+
+div.navbar ul li a.login:focus{
+    background-color: rgb(146, 156, 165);
+    transform: scale(1.15);
+}
+
+div a.name{
+    display: flex;
+    align-items: center;
+    font-family: nokia;
+    text-decoration: none;
+    color: black;
+    font-size: 1.6em;
+    margin-left: 50px;
+    margin-right: 200px;
+}
+
+div.searchbox{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+#find{
+    z-index: 1000;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    outline: 0;
+    width: 100%;
+    height: 25px;
+    font-size: 1.2em;
+    padding-left: 10px;
+}
+
+#find:active{
+  background-color: transparent;
+}
+
+box-icon{
+    width: 60px;
+    margin-right: 10px;
+}
+
+::placeholder{
+    font-weight: 500;
+}
+
+.greeting{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 30px;
+  font-family: molot;
+}
+
+.greeting p{
+  letter-spacing: 2px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.greeting img{
+  margin-top: 100px;
+
+  width: 70px;
+}
+
+.greeting img:hover{
+  transform: scale(1.4);
+}
+
+.greeting .me{
+  margin-top: 20px;
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.greeting .me:hover{
+  background-color: rgb(174, 186, 197);
+  transform: scale(1.05);
+}
+
+#checkpoint{
+  visibility: hidden;
+  margin-bottom: 90px;
+}
+
+#mall{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+label {
+  margin: 10px;
+  display: flex;
+	width: 300px;
+	height: 350px;
+	perspective: 1000px;
+	transform-style: preserve-3d;
+	cursor: pointer;
+}
+
+.flip-card {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	transition: all 0.5s ease-in-out;
+	z-index: 1;
+}
+
+.flip-card .front,
+.flip-card .back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background: rgb(174, 186, 197);
+	backface-visibility: hidden;
+	border-radius: 20px;
+}
+
+.flip-card .back {
+	transform: rotateX(180deg);
+	color: #000;
+	background: rgb(174, 186, 197);
+}
+
+label:hover .flip-card {
+	transform: rotateX(2deg);
+  border-radius: 20px;
+	box-shadow: 0 20px 20px rgba(50, 60, 60, 0.2);
+}
+
+.card{
+	display: none;
+}
+
+:checked + .flip-card {
+	transform: rotateX(180deg);
+}
+label:hover :checked + .flip-card {
+	transform: rotateX(175deg);
+	box-shadow: 0 20px 20px rgba(255, 255, 255, 0.2);
+}
+
+.front img {
+	width: 110px;
+	height: 110px;
+	margin: 30px 0 20px 0;
+	border-radius: 50%;
+}
+
+.front h1 {
+  font-family: nokia;
+	font-size: 30px;
+	color: black;
+	margin: 0;
+}
+.front h2 {
+  font-family: molot;
+	font-size: 18px;
+	color: black;
+	margin: 12px 0 12px 0;
+}
+
+.front b {
+  font-family: nokia;
+	font-size: 10px;
+	color: black;
+	margin: 0 0 35px 0;
+	display: block;
+}
+
+.front p{
+  color: black;
+  font-family: molot;
+	font-size: 18px;
+	font-weight: 600;
+  padding: 19px;
+  border-radius: 0px 0px 20px 20px;
+  background-color: rgb(3, 3, 3, 0.3);
+}
+
+.click{
+  font-weight: 600;
+  padding: 17px;
+  border-radius: 0px 0px 20px 20px;
+  background-color: rgb(174, 186, 197);
+}
+
+.back h1 {
+	color: black;
+	margin: 30px 0 0 0;
+  font-family: nokia;
+}
+
+.space{
+	width: 180px;
+	margin: 15px auto 10px auto;
+}
+
+.back p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	font-size: 16px;
+	color: #000;
+	padding: 0 12px;
+	line-height: 30px;
+	text-align: center;
+  font-family: molot;
+}
+
+.sosmed{
+  justify-content: center;
+  display: flex;
+  margin-top: 30px;
+}
+
+.sosmed img{
+  height: 30px;
+  margin: 10px;
+  
+  border-radius: 5px;
+}
+
+.sosmed a:hover{
+  transform: scale(1.2);
+}
+
+
+footer{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: rgb(174, 186, 197);
+}
+
+footer .bottom{
+  font-family: nokia;
+  text-align: center;
+  letter-spacing: 2px;;
+}
+
+footer .quotes{
+  font-family: molot;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+@font-face {
+    font-family: nokia;
+    src: url(files/nokiafc22.ttf);
+}
+@font-face {
+    font-family: mario;
+    src: url(files/Super-Mario-Bros--3.ttf);
+}
+@font-face {
+  font-family: molot;
+  src: url(files/rainyhearts.ttf);
+}
+
+
+::-webkit-scrollbar{
+  display: none;
+}
