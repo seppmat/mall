@@ -328,7 +328,69 @@ footer .quotes{
 
 
 
+@media screen and (max-width: 650px){ 
 
+
+
+  .wrap .name{ 
+    margin-right: 20px;
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+
+  .navbar ul{
+    margin-left: 20px;
+  }
+
+  .navbar ul li{
+    padding: 2px;
+  }
+
+  .navbar ul li a{
+    font-size: 1em;
+    letter-spacing: normal;
+  }
+
+  label{
+    margin-bottom: 20px;
+  }
+
+  .login{
+    margin-left: 1px;
+
+  }
+
+
+  ::placeholder{
+    font-size: 10px;
+  }
+
+  .greeting h1{
+    font-size: 20px;
+  }
+
+  .greeting p{
+    letter-spacing: normal;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .greeting .me{
+    height: 50px;
+    width: 120px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .bottom h5{
+    font-size: 7px;
+    margin-top: 3px;
+  }
+  .bottom .quotes{
+    font-size: 10px;
+    letter-spacing: normal;
+  }
+}
 
 
 @font-face {
