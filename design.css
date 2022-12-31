@@ -370,6 +370,7 @@ footer .quotes{
   }
 
   .greeting p{
+    margin-top:0px;
     letter-spacing: normal;
     font-size: 12px;
     text-align: center;
@@ -378,7 +379,7 @@ footer .quotes{
   .greeting .me{
     height: 50px;
     width: 120px;
-    font-size: 15px;
+    font-size: 12px;
     text-align: center;
   }
 
