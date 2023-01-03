@@ -12,37 +12,31 @@ body{
 
 .wrap{
     z-index: 9999;
-    background-color: rgb(174, 186, 197); 
+    background-color: rgb(174, 186, 197);
     position: fixed;
     width: 100%;
     display: flex;
     align-items: center;
 }
 
-.navbar{
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    position: relative;
+nav{
     display: flex;
-    
+    flex-direction: row;
+    align-items: center;    
 }
 
-.navbar ul{
+nav ul{
     display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
+    padding: 3px;
     margin-left: 100px;
 }
 
-.navbar ul li{
+nav ul li{
     list-style: none;
     padding: 10px;
 }
 
-.navbar ul li a{
+nav ul li a{
     font-weight: bolder;
     color: black;
     text-decoration: none;
@@ -51,20 +45,76 @@ body{
     letter-spacing: 1.5px;
 }
 
-div.navbar ul li a.login{
-    margin-left: 180px;
-    border: 1px solid black;
-    border-radius: 3px;
-    padding: 6px;
-    display: flex;
+.menu-toggle{
+  display: none;            
+  flex-direction: column;
+  height: 20px;
+  border-radius: 5px;
+  justify-content: space-around;
+  position: relative;
 }
 
-div.navbar ul li a.login:hover{
+.menu-toggle input{
+  z-index: 2;
+  opacity: 0;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
+
+.menu-toggle span{
+  display: block;
+  background-color: black;
+  width: 30px;
+  height: 3px;
+  border-radius: 4px;
+  transition: all 1s;
+}
+
+.menu-toggle span:nth-child(2){
+  transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4){
+  transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ :nth-child(2){
+  transform: rotate(40deg) translate(-3px, -3px);
+}
+
+.menu-toggle input:checked ~ :nth-child(4){
+  transform: rotate(-40deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked ~ :nth-child(3){
+  transform: scale(0);
+}
+
+
+a.login{
+    z-index: 1;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 10px;
+    display: flex;
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+    font-family: molot;
+    font-size: 1.5em;
+    letter-spacing: 1.5px;
+}
+
+.login:hover{
     background-color: rgb(146, 156, 165);
     transform: scale(1.05);
 }
 
-div.navbar ul li a.login:focus{
+.login:focus{
     background-color: rgb(146, 156, 165);
     transform: scale(1.15);
 }
@@ -110,6 +160,7 @@ box-icon{
 ::placeholder{
     font-weight: 500;
 }
+
 
 .greeting{
   height: 100vh;
@@ -256,13 +307,6 @@ label:hover :checked + .flip-card {
   background-color: rgb(3, 3, 3, 0.3);
 }
 
-.click{
-  font-weight: 600;
-  padding: 17px;
-  border-radius: 0px 0px 20px 20px;
-  background-color: rgb(174, 186, 197);
-}
-
 .back h1 {
 	color: black;
 	margin: 30px 0 0 0;
@@ -309,8 +353,6 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 60px;
   background-color: rgb(174, 186, 197);
 }
 
@@ -328,9 +370,11 @@ footer .quotes{
 
 
 
-@media screen and (max-width: 650px){ 
+@media screen and (max-width: 576px){ 
 
-
+  .searchbox{
+    width: 50%;
+  }
 
   .wrap .name{ 
     margin-right: 20px;
@@ -338,15 +382,34 @@ footer .quotes{
     font-size: 1rem;
   }
 
-  .navbar ul{
+  .menu-toggle{
     margin-left: 20px;
-  }
+    display: flex;
+}
 
-  .navbar ul li{
+  nav ul{
+    width: 100%;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: space-evenly;
+    background-color: rgb(88, 92, 95);
+    z-index: 9999;
+    transform: translateX(100%);
+    transition: all 1s;
+    opacity: 0;
+}
+  nav ul.slide{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+  nav ul li{
     padding: 2px;
   }
 
-  .navbar ul li a{
+  nav ul li a{
     font-size: 1em;
     letter-spacing: normal;
   }
@@ -356,8 +419,7 @@ footer .quotes{
   }
 
   .login{
-    margin-left: 1px;
-
+    margin-left: 40px;
   }
 
 
@@ -370,17 +432,19 @@ footer .quotes{
   }
 
   .greeting p{
-    margin-top: 0px;
+    margin-top: 5px;
     letter-spacing: normal;
-    font-size: 12px;
+    font-size: 20px;
     text-align: center;
   }
 
   .greeting .me{
-    height: 50px;
-    width: 120px;
     font-size: 12px;
     text-align: center;
+  }
+
+  footer{
+    height: 7vh;
   }
 
   .bottom h5{
@@ -409,5 +473,5 @@ footer .quotes{
 
 
 ::-webkit-scrollbar{
-  display: none;
+  /* display: none; */
 }

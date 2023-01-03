@@ -7,57 +7,35 @@
     <title>Welcome!</title>
     <link rel="stylesheet" href="design.css">
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <script>
-
-
-    function search() {
-
-    let filter = document.getElementById('find').value.toUpperCase();
-
-    let item = document.querySelectorAll('label');
-
-    let l = document.getElementsByClassName('keyword');
-
-    for(var i = 0;i<=l.length;i++){
-        let a=item[i].getElementsByClassName('keyword')[0];
-        
-        let value=a.innerHTML || a.innerText || a.textContent;
-
-        if(value.toUpperCase().indexOf(filter) > -1) {
-            item[i].style.display="";
-        }
-        else{
-            item[i].style.display="none";
-        }
-    }
-}
-    </script>
-
+    <script src="script.js"></script>
 </head>
 <body>
-
-
     <div class="wrap">
         <div class="searchbox">
-            <a href="" class="name">OneraVem</a>
+            <a href="" class="name">DStore</a>
             <box-icon name='search-alt-2' type='solid' animation='tada-hover'></box-icon>
             <input id="find" type="text" placeholder="Search" onkeyup="search()">
         </div>
-        <div class="navbar">
+		<nav>
             <ul>
                 <li><a href="page.html">Home</a></li>
                 <li><a href="">Shop</a></li>
                 <li><a href="">Address</a></li>
                 <li><a href="">About</a></li>
-                <li><a class="login" href="login.html">LOGIN</a></li>
             </ul>
-        </div>
+			<div class="menu-toggle">
+				<input type="checkbox">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<a class="login" href="login.html">LOGIN</a>
+		</nav>
     </div>
     <div class="greeting">
-      <h1>Welcome to not your website </h1>
-      <p>ini adalah website informasi sederhana mengenai mall yang ada di Batam!</p>
-      <p>Pleaseee males banget jadi begini aja jadinya </p>
-      <h1>ಥ_ಥ</h1><br>
+      <h1>DStore Batam</h1>
+      <p>This is the landing page of DStore Batam </p>
+      <p>Find mall in Batam, here!</p><br>
       <a class="me" href=""><h2 class="keyword">who is me?</h2></a>
       <a href="#checkpoint"><img src="files/bot.svg"></a>
     </div>
@@ -73,7 +51,7 @@
 					<h1>MALL</h1>
 					<h2 class="keyword">Harbour Bay Batam Mall</h2>
 					<b>Batu Ampar</b>
-					<p>Informasi Selengkapnya</p>
+					<p>More Info</p>
 				</div>
 				<div class="back">
 					<h1>About Mall</h1>
@@ -98,7 +76,7 @@
 					<h1>MALL</h1>
 					<h2 class="keyword">Diamond City (DC) Mall</h2>
 					<b>Lubuk Baja</b>
-					<p>Informasi Selengkapnya</p>
+					<p>More Info</p>
 				</div>
 				<div class="back">
 					<h1>About Mall</h1>
@@ -123,7 +101,7 @@
 					<h1>MALL</h1>
 					<h2 class="keyword">Batam City Square (BCS)</h2>
 					<b>Lubuk Baja</b>
-					<p>Informasi Selengkapnya</p>
+					<p>More Info</p>
 				</div>
 				<div class="back">
 					<h1>About Mall</h1>
@@ -148,7 +126,7 @@
 					<h1>MALL</h1>
 					<h2 class="keyword">Mega Mall Batam</h2>
 					<b>Batam Kota</b>
-					<p>Informasi Selengkapnya</p>
+					<p>More Info</p>
 				</div>
 				<div class="back">
 					<h1>About Mall</h1>
@@ -173,7 +151,7 @@
 					<h1>MALL</h1>
 					<h2 class="keyword">Nagoya Hill Shopping Mall</h2>
 					<b>Nagoya</b>
-					<p>Informasi Selengkapnya</p>
+					<p>More Info</p>
 				</div>
 				<div class="back">
 					<h1>About Mall</h1>
@@ -198,7 +176,7 @@
 					<h1>MALL</h1>
 					<h2 class="keyword">Kepri Mall</h2>
 					<b>Batam Kota</b>
-					<p>Informasi Selengkapnya</p>
+					<p>More Info</p>
 				</div>
 				<div class="back">
 					<h1>About Mall</h1>
@@ -223,7 +201,7 @@
 					<h1>MALL</h1>
 					<h2 class="keyword">Panbill Mall</h2>
 					<b>Muka Kuning</b>
-					<p>Informasi Selengkapnya</p>
+					<p>More Info</p>
 				</div>
 				<div class="back">
 					<h1>About Mall</h1>
@@ -248,7 +226,7 @@
 					<h1>MALL</h1>
 					<h2 class="keyword">Plaza BatamIndo</h2>
 					<b>Nongsa</b>
-					<p>Informasi Selengkapnya</p>
+					<p>More Info</p>
 				</div>
 				<div class="back">
 					<h1>About Mall</h1>
@@ -273,7 +251,7 @@
 					<h1>MALL</h1>
 					<h2 class="keyword">Avava Mall</h2>
 					<b>Lubuk Baja</b>
-					<p>Informasi Selengkapnya</p>
+					<p>More Info</p>
 				</div>
 				<div class="back">
 					<h1>About Mall</h1>
@@ -298,7 +276,7 @@
 					<h1>MALL</h1>
 					<h2 class="keyword">Top 100 Jodoh</h2>
 					<b>Lubuk Baja</b>
-					<p>Informasi Selengkapnya</p>
+					<p>More Info</p>
 				</div>
 				<div class="back">
 					<h1>About Mall</h1>
@@ -323,7 +301,7 @@
 					<h1>MALL</h1>
 					<h2 class="keyword">Lucky Plaza Batam</h2>
 					<b>Lubuk Baja</b>
-					<p>Informasi Selengkapnya</p>
+					<p>More Info</p>
 				</div>
 				<div class="back">
 					<h1>About Mall</h1>
@@ -348,7 +326,7 @@
 					<h1>MALL</h1>
 					<h2 class="keyword">One Batam Mall</h2>
 					<b>Batam Kota</b>
-					<p>Informasi Selengkapnya</p>
+					<p>More Info</p>
 				</div>
 				<div class="back">
 					<h1>About Mall</h1>
@@ -373,7 +351,7 @@
 					<h1>MALL</h1>
 					<h2 class="keyword">Mall Top 100 Batu Aji</h2>
 					<b>Sagulung</b>
-					<p>Informasi Selengkapnya</p>
+					<p>More Info</p>
 				</div>
 				<div class="back">
 					<h1>About Mall</h1>
@@ -398,7 +376,7 @@
 					<h1>MALL</h1>
 					<h2 class="keyword">Mall Botania 2</h2>
 					<b>Batam Kota</b>
-					<p>Informasi Selengkapnya</p>
+					<p>More Info</p>
 				</div>
 				<div class="back">
 					<h1>About Mall</h1>
@@ -423,7 +401,7 @@
 					<h1>MALL</h1>
 					<h2 class="keyword">Grand Batam Mall</h2>
 					<b>Lubuk Baja</b>
-					<p>Informasi Selengkapnya</p>
+					<p>More Info</p>
 				</div>
 				<div class="back">
 					<h1>About Mall</h1>
@@ -448,7 +426,7 @@
 					<h1>MALL</h1>
 					<h2 class="keyword">Star Trade Center (STC) Mall</h2>
 					<b>Sekupang</b>
-					<p>Informasi Selengkapnya</p>
+					<p>More Info</p>
 				</div>
 				<div class="back">
 					<h1>About Mall</h1>
@@ -465,19 +443,12 @@
 			</div>
     </label>
 
-
-
-    
-
-
-
  </div>    
-      
-		
+      	
 <footer>
   <div class="bottom">
-    <h5>This Website Made by Me not You</h5>
-    <i><p class="quotes">"Dia sedang bercanda, harusnya kamu tertawa bukan menyukainya"</p></i>
+    <h5>Our Official Website DStore Batam</h5>
+    <i><p class="quotes">"Life for Nothing not for Future"</p></i>
   </div>
 </footer>
 
